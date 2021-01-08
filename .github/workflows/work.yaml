@@ -41,8 +41,5 @@ jobs:
               uses: actions/upload-artifact@master
               if: env.UPLOAD_BESULT_DIR == 'true'
               with:
-                name: 运行result
+                name: result
                 path: ./*.txt
-
-
-
