@@ -4,11 +4,11 @@ on:
   repository_dispatch:
   release:
     types: published
-  # push:
-  #   branches:
-  #     - master
-  schedule:
-    - cron: 0 */1 * * *
+   push:
+     branches:
+       - master
+  # schedule:
+  #  - cron: 0 */1 * * *
   watch:
     types: started
     
@@ -43,5 +43,6 @@ jobs:
               with:
                 name: 运行result
                 path: ./*.txt
+
 
 
